@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+@import '../node_modules/@swimlane/ngx-datatable/themes/material.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/dark.css';
+@import '../node_modules/@swimlane/ngx-datatable/themes/bootstrap.css';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.centrar-texto{
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente con flexbox */
+    align-items: center; /* Centrar verticalmente con flexbox */
+    width: 100%; /* Ancho completo */
+
+}
+
+.barraTituloCRUD{
+    background: rgb(41, 4, 89);
+    color: #fff;
+    height: 75px;
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente con flexbox */
+    align-items: center; /* Centrar verticalmente con flexbox */
+    width: 100%; /* Ancho completo */
+
+}
+
+.busqueda {
+  display: flex;            /* Usa flexbox para alinear los elementos en fila (horizontalmente) */
+  gap: 20px;                /* Deja un espacio de 20px entre el campo de texto y el botón */
+  align-items: center;      /* Alinea verticalmente los elementos al centro */
+  margin: 20px 0;           /* Deja un margen de 20px arriba y abajo del contenedor */
+
+}
+
+/* Campo del año (mat-form-field) ocupa el mayor espacio posible dentro del contenedor flex */
+.campo-anho {
+  flex: 1;                  /* El campo de año se expande para ocupar el espacio disponible */
+
+}
+
+.barraTituloCRUD2{
+    background: rgb(128, 7, 104);
+    color: #fff;
+    height: 75px;
+    text-align: center; /* Centrar horizontalmente */
+    display: flex; /* Utilizamos flexbox para centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente con flexbox */
+    align-items: center; /* Centrar verticalmente con flexbox */
+    width: 100%; /* Ancho completo */
+
+}
+
+.contenedor {
+  display: flex;                   /* Usa Flexbox para el diseño */
+  flex-direction: column;         /* Organiza los hijos en columna (uno debajo del otro) */
+  align-items: center;            /* Centra horizontalmente los elementos hijos */
+  gap: 20px;                      /* Espacio vertical entre los elementos */
+  margin-top: 40px;               /* Margen superior (espacio desde arriba de la página) */
+  padding: 20px;                  /* Espacio interno alrededor de los elementos */
+}
+
+.campo-fecha {
+  width: 600px;                   /* Ancho del cuadro del calendario para que no se vea ni muy grande ni muy pequeño */
+
+}
+
+.barraTituloCRUD2 {
+  font-size: 20px;                /* Tamaño de letra más grande */
+  font-weight: bold;             /* Texto en negrita */
+  text-align: center;            /* Centra el texto horizontalmente */
+  width: 100%;                   /* Ocupa todo el ancho del contenedor para centrar bien */
+  
+}
+

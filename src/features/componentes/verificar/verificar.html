@@ -1,0 +1,16 @@
+<mat-toolbar>
+    <div class="barraTituloCRUD2">
+        Verificar una fecha específica
+    </div>
+</mat-toolbar>
+
+<div class="contenedor">
+  <mat-form-field appearance="outline" class="campo-fecha">
+    <mat-label>Selecciona una fecha</mat-label>
+    <input matInput [matDatepicker]="picker" [(ngModel)]="fechaSeleccionada">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+
+  <button mat-raised-button color="accent" (click)="verificarDiaFestivo()">Verificar</button>
+</div>
