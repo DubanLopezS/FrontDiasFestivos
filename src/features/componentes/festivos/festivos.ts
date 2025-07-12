@@ -27,6 +27,7 @@ export class FestivosComponent implements OnInit {
     this.obtenerFestivos();
   }
 
+  
   public anho: number | null = null;
   public festivos: Festivo[] = []
   public columnas = [
